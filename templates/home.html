@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Check Yo-Self{% endblock %}
+
+{% block content %}
+
+    <h2>Enter your article's URL below.</h2>
+    <br>
+    <form action="/fact-check">
+    <input type="text" name="article_address" placeholder="copy URL here">
+    <br><input type="submit">
+    </form>
+    
+{% endblock %}
