@@ -12,10 +12,12 @@ def home():
 
     return render_template("home.html")
 
-# @app.route("/fact-check")
-# def fact_check():
+@app.route("/fact-check")
+def fact_check():
 
-#     return render_template("fact-check.html", article_address=article_address)
+    article_address = request.args.get("article_address")
+    
+    return render_template("fact-check.html", article_address=article_address)
 
 
 if __name__ == "__main__":
